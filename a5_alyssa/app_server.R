@@ -27,11 +27,11 @@ server <- function(input, output) {
   
   output$value1 <- renderText({
     paste0("They categorized the data according to ", country_total, " countries, and the country with the most Carbon Dioxide (CO2) is
-    ", country_highest, " with ", highest_co2, " million tonnes. Their approaches displays the total yearly production-based carbon dioxide (CO2) emissions 
-    in million tonnes without taking into account changes in land use. The methodology employed here is based on territorial emissions, 
-    which exclude emissions present in traded commodities. In this project, I'm analyzing the Carbon Dioxide (CO2) pattern from 1750 to 2021. 
-    While some countries may not have their data available since the 1750, we can see a prominent pattern that 
-    Greenhouse Gas Emissions significantly rise from year to year.")
+    ", country_highest, " with ", highest_co2, " million tonnes. Their approach displays the total yearly production-based carbon dioxide (CO2) 
+    emissions in million tonnes without taking into account changes in land use. The methodology employed here is based on 
+    territorial emissions, which exclude emissions present in traded commodities. In this project, I'm analyzing the Carbon Dioxide (CO2) 
+    levels pattern from 1750 to 2021. While some countries may not have their data available since the 1750, we can see a 
+    prominent pattern that Greenhouse Gas Emissions significantly rise from year to year.")
   })
   
   output$pickCountry <- renderUI({
